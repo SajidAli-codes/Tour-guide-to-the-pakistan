@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tour Guide to Pakistan</title>
+  <link rel="stylesheet" href="tour.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Tour Guide to Pakistan</h1>
+            <p>Discover the Beauty, Culture, and Heritage of Pakistan</p>
+        </div>
+
+        <div id="main-options" class="options-grid">
+            <div class="option-card" onclick="showSection('deserts')">
+                <span class="icon"><img src="C:\Users\Hp\Desktop\my html\new\tourguide\img/desert.jpeg "alt="desert"></span>
+                <h3>Desert Areas</h3>
+                
+                <p>Explore the mystical beauty of Pakistan's vast deserts, from the golden dunes of Thar to the rugged landscapes of Cholistan.</p>
+            </div>
+
+            <div class="option-card" onclick="showSection('mountains')">
+                <span class="icon"><img src="C:\Users\Hp\Desktop\my html\new\tourguide\img/phander.jpeg "alt="Greenery"></span>
+                <h3>Mountains & Greenery</h3>
+                <p>Discover lush valleys, snow-capped peaks, and pristine lakes in the northern areas including Hunza, Skardu, and Swat.</p>
+            </div>
+
+            <div class="option-card" onclick="showSection('cities')">
+                <span class="icon"><img src="C:\Users\Hp\Desktop\my html\new\tourguide\img/islamabad.jpeg "alt="cities"></span>
+                <h3>Modern Cities</h3>
+                <p>Experience the vibrant urban life in Pakistan's metropolitan cities like Karachi, Lahore, and Islamabad.</p>
+            </div>
+
+            <div class="option-card" onclick="showSection('historical')">
+                <span class="icon"><img src="C:\Users\Hp\Desktop\my html\new\tourguide\img/altit.jpeg "alt="historical sites"></span>
+                <h3>Historical Places</h3>
+                <p>Journey through time visiting ancient civilizations, Mughal architecture, and UNESCO World Heritage Sites.</p>
+            </div>
+        </div>
+
+        <!-- Desert Section -->
+        <div id="deserts" class="detail-section">
+            <button class="back-btn" onclick="showMainMenu()">← Back to Main Menu</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;">🏜️ Desert Adventures</h2>
+            
+            <div class="places-grid">
+                <div  class="place-card">
+                    
+                     <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/thar.jpeg "alt="desert">
+                    <div class="place-info">
+                        <h4>Thar Desert</h4>
+                        <p>The largest desert in Pakistan, famous for its golden sand dunes, camel safaris, and traditional desert culture.</p>
+                    </div>
+                    </div>
+                
+                <div class="place-card">
+                    <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/cholistan.jpeg "alt="cholistan desert">
+                    <div class="place-info">
+                        <h4>Cholistan Desert</h4>
+                        <p>Home to the magnificent Derawar Fort and famous for its annual jeep rally and desert festivals.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                   <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/kharan.jpeg "alt=" kharan desert">
+                    <div class="place-info">
+                        <h4>Kharan Desert</h4>
+                        <p>A remote desert region in Balochistan known for its stark beauty and archaeological sites.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-section">
+                <h3>🏨 Book Your Desert Adventure</h3>
+                <div class="booking-grid">
+                    <div class="booking-card">
+                        <h4>Hotels & Resorts</h4>
+                        <div class="booking-item" onclick="bookService('Desert Oasis Resort')">
+                            <h5>Desert Oasis Resort</h5>
+                            <p>Luxury desert camping with modern amenities</p>
+                            <p><strong>8,500 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Thar Heritage Hotel')">
+                            <h5>Thar Heritage Hotel</h5>
+                            <p>Traditional hospitality in desert setting</p>
+                            <p><strong>6,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Cholistan Palace')">
+                            <h5>Cholistan Palace</h5>
+                            <p>Historic fort converted to luxury hotel</p>
+                            <p><strong>10,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="booking-card">
+                        <h4>Drivers & Guides</h4>
+                        <div class="booking-item" onclick="bookService('Ahmed - Desert Guide')">
+                            <h5>Ahmed Khan - Desert Specialist</h5>
+                            <p>15 years experience, speaks English/Urdu</p>
+                            <p><strong>3,500 PKR/day</strong></p>
+                            <button class="book-btn">Book Guide</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Safari Adventures')">
+                            <h5>Safari Adventures</h5>
+                            <p>4WD desert tours and camel safaris</p>
+                            <p><strong>4,500 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Desert Explorers')">
+                            <h5>Desert Explorers</h5>
+                            <p>Photography tours and overnight camping</p>
+                            <p><strong>5,000 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mountains Section -->
+        <div id="mountains" class="detail-section">
+            <button class="back-btn" onclick="showMainMenu()">← Back to Main Menu</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;"> Mountain Paradise</h2>
+            
+            <div class="places-grid">
+                <div class="place-card">
+                      <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/hunza.jpeg "alt=" hunza">
+                    <div class="place-info">
+                        <h4>Hunza Valley</h4>
+                        <p>Known as the "Shangri-La" of Pakistan, famous for its stunning mountain views, apricot blossoms, and longevity of its people.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                      <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/skardu.jpeg "alt=" skardu">
+                    <div class="place-info">
+                        <h4>Skardu</h4>
+                        <p>Gateway to K2 and other 8000m peaks, featuring beautiful lakes, valleys, and trekking opportunities.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                      <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/kharan.jpeg "alt=" swat valley">
+                    <div class="place-info">
+                        <h4>Swat Valley</h4>
+                        <p>Called "Switzerland of Pakistan" for its lush green valleys, crystal-clear rivers, and snow-capped mountains.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-section">
+                <h3>Book Your Mountain Adventure</h3>
+                <div class="booking-grid">
+                    <div class="booking-card">
+                        <h4>Hotels & Lodges</h4>
+                        <div class="booking-item" onclick="bookService('Hunza Serena Inn')">
+                            <h5>Hunza Serena Inn</h5>
+                            <p>Premium hotel with mountain views</p>
+                            <p><strong>9,500 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Skardu Resort')">
+                            <h5>Skardu Resort</h5>
+                            <p>Comfortable stay near Satpara Lake</p>
+                            <p><strong>7,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Swat Continental')">
+                            <h5>Swat Continental</h5>
+                            <p>Modern amenities in valley setting</p>
+                            <p><strong>8,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="booking-card">
+                        <h4>Mountain Guides</h4>
+                        <div class="booking-item" onclick="bookService('Ali - Mountain Guide')">
+                            <h5>Ali Hassan - Trekking Expert</h5>
+                            <p>Certified mountain guide, 20 years experience</p>
+                            <p><strong>4,000 PKR/day</strong></p>
+                            <button class="book-btn">Book Guide</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Northern Adventures')">
+                            <h5>Northern Adventures</h5>
+                            <p>Complete trekking and mountaineering tours</p>
+                            <p><strong>5,000 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Karakoram Expeditions')">
+                            <h5>Karakoram Expeditions</h5>
+                            <p>High-altitude trekking specialists</p>
+                            <p><strong>4,800 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cities Section -->
+        <div id="cities" class="detail-section">
+            <button class="back-btn" onclick="showMainMenu()">← Back to Main Menu</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;"> Modern Urban Experience</h2>
+            
+            <div class="places-grid">
+                <div class="place-card">
+                     <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/karachi.jpeg "alt="Karachi city">
+                    <div class="place-info">
+                        <h4>Karachi</h4>
+                        <p>Pakistan's largest city and economic hub, featuring beautiful beaches, modern architecture, and vibrant nightlife.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+             <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/lahore.jpeg "alt="lahore city of pakistan">  
+                    <div class="place-info">
+                        <h4>Lahore</h4>
+                        <p>Cultural capital of Pakistan, famous for its food scene, arts, and blend of modern and traditional architecture.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                    <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/islamabad.jpeg "alt="islamabad the capital of  pakistan">
+                    <div class="place-info">
+                        <h4>Islamabad</h4>
+                        <p>The planned capital city known for its modern infrastructure, green spaces, and proximity to the Margalla Hills.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-section">
+                <h3> Book Your City Experience</h3>
+                <div class="booking-grid">
+                    <div class="booking-card">
+                        <h4>Luxury Hotels</h4>
+                        <div class="booking-item" onclick="bookService('Pearl Continental')">
+                            <h5>Pearl Continental Karachi</h5>
+                            <p>5-star luxury with sea views</p>
+                            <p><strong>10,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Avari Lahore')">
+                            <h5>Avari Hotel Lahore</h5>
+                            <p>Premium business hotel in heart of city</p>
+                            <p><strong>8,500 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Marriott Islamabad')">
+                            <h5>Marriott Hotel Islamabad</h5>
+                            <p>International standard with mountain views</p>
+                            <p><strong>9,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="booking-card">
+                        <h4>City Tours & Drivers</h4>
+                        <div class="booking-item" onclick="bookService('City Explorer')">
+                            <h5>Muhammad - City Expert</h5>
+                            <p>Professional driver & city guide</p>
+                            <p><strong>3,000 PKR/day</strong></p>
+                            <button class="book-btn">Book Driver</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Urban Adventures')">
+                            <h5>Urban Adventures</h5>
+                            <p>Food tours and cultural experiences</p>
+                            <p><strong>3,500 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Metro Tours')">
+                            <h5>Metro City Tours</h5>
+                            <p>Complete city packages with transport</p>
+                            <p><strong>4,200 PKR/day</strong></p>
+                            <button class="book-btn">Book Package</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historical Section -->
+        <div id="historical" class="detail-section">
+            <button class="back-btn" onclick="showMainMenu()">← Back to Main Menu</button>
+            <h2 style="text-align: center; margin-bottom: 30px; color: #333;">🏛️ Historical Treasures</h2>
+            
+            <div class="places-grid">
+                <div class="place-card">
+                     <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/mohinjodaro.jpeg "alt=" mohinjo daro historical site">
+                    <div class="place-info">
+                        <h4>Mohenjo-daro</h4>
+                        <p>UNESCO World Heritage Site, ruins of the ancient Indus Valley Civilization dating back to 2500 BCE.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                     <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/badshahi.jpeg "alt="badshahi mosque of pakistan">
+                    <div class="place-info">
+                        <h4>Badshahi Mosque</h4>
+                        <p>Magnificent Mughal architecture in Lahore, one of the largest mosques in the world built by Emperor Aurangzeb.</p>
+                    </div>
+                </div>
+                <div class="place-card">
+                     <img  class="place-card" src="C:\Users\Hp\Desktop\my html\new\tourguide\img/taxila.jpeg "alt="Taxila">
+                    <div class="place-info">
+                        <h4>Taxila</h4>
+                        <p>Ancient Buddhist monastery and university complex, showcasing Gandhara art and Buddhist heritage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-section">
+                <h3>Book Your Historical Journey</h3>
+                <div class="booking-grid">
+                    <div class="booking-card">
+                        <h4>Heritage Hotels</h4>
+                        <div class="booking-item" onclick="bookService('Heritage Inn')">
+                            <h5>Mohenjo-daro Heritage Inn</h5>
+                            <p>Traditional accommodation near ruins</p>
+                            <p><strong>5,000 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Fortress Hotel')">
+                            <h5>Fortress Hotel Lahore</h5>
+                            <p>Historic building with modern amenities</p>
+                            <p><strong>7,500 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Buddhist Lodge')">
+                            <h5>Buddhist Heritage Lodge</h5>
+                            <p>Peaceful stay near Taxila ruins</p>
+                            <p><strong>6,500 PKR/night</strong></p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+                    <div class="booking-card">
+                        <h4>History Guides</h4>
+                        <div class="booking-item" onclick="bookService('Dr. Rashid - Archaeologist')">
+                            <h5>Dr. Rashid - Archaeologist</h5>
+                            <p>PhD in Ancient History, expert guide</p>
+                            <p><strong>4,500 PKR/day</strong></p>
+                            <button class="book-btn">Book Guide</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Heritage Tours')">
+                            <h5>Heritage Discovery Tours</h5>
+                            <p>Complete historical site packages</p>
+                            <p><strong>5,000 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                        <div class="booking-item" onclick="bookService('Ancient Paths')">
+                            <h5>Ancient Paths</h5>
+                            <p>Archaeological and cultural tours</p>
+                            <p><strong>4,200 PKR/day</strong></p>
+                            <button class="book-btn">Book Tour</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>🎉 Booking Confirmation</h2>
+            <p id="bookingMessage"></p>
+            <p>Thank you for choosing our services! We will contact you shortly with booking details.</p>
+            <div style="margin-top: 20px;">
+                <p><strong>Contact Information:</strong></p>
+                <p>📞 Phone: +92-300-1234567</p>
+                <p>📧 Email: bookings@pakistantourguide.com</p>
+                <p>💬 WhatsApp: +92-300-1234567</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide main options
+            document.getElementById('main-options').style.display = 'none';
+            
+            // Hide all sections
+            const sections = ['deserts', 'mountains', 'cities', 'historical'];
+            sections.forEach(section => {
+                document.getElementById(section).style.display = 'none';
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function showMainMenu() {
+            // Hide all sections
+            const sections = ['deserts', 'mountains', 'cities', 'historical'];
+            sections.forEach(section => {
+                document.getElementById(section).style.display = 'none';
+            });
+            
+            // Show main options
+            document.getElementById('main-options').style.display = 'grid';
+        }
+
+        function bookService(serviceName) {
+            const message = `You have selected: ${serviceName}`;
+            document.getElementById('bookingMessage').textContent = message;
+            document.getElementById('bookingModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('bookingModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        // Add animation delays for cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.option-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+        });
+    </script>
+</body>
+</html>
